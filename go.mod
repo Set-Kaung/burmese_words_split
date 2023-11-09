@@ -1,3 +1,3 @@
-module github.com/set-kaung/burmese_words_split
+module github.com/Set-Kaung/burmese_words_split
 
-go 1.21.3
+go 1.21.4

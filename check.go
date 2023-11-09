@@ -2,6 +2,26 @@ package main
 
 import "strings"
 
+const (
+	TALL_AA   rune = 'ါ'
+	AA             = 'ာ'
+	I              = 'ိ'
+	II             = 'ီ'
+	U              = 'ု'
+	UU             = 'ူ'
+	E              = 'ေ'
+	AI             = 'ဲ'
+	ANUSVARA       = 'ံ'
+	DOT_BELOW      = '့'
+	VISARGA        = 'း'
+	VIRAMA         = '္'
+	ASAT           = '်'
+	MEDIAL_YA      = 'ျ'
+	MEDIAL_RA      = 'ြ'
+	MEDIAL_WA      = 'ွ'
+	MEDIAL_HA      = 'ှ'
+)
+
 // Splitter returns the words of a sentence in a map
 // with a slice of indices where the words occur
 // in the sentece and also returns the amount of words.
