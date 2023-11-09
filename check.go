@@ -2,6 +2,9 @@ package main
 
 import "strings"
 
+// Splitter returns the words of a sentence in a map
+// with a slice of indices where the words occur
+// in the sentece and also returns the amount of words.
 func Splitter(sentence string) (map[string][]int, int) {
 	diacritics_map := make(map[rune]string, 17)
 	diacritics_map['ံ'] = "ANUSVARA"
@@ -65,6 +68,7 @@ func splitIntoWords(diacritics_map map[rune]string, words map[string][]int, sRun
 				words = insertIntoMapSlice(word, index, words)
 				index++
 				builder.Reset()
+				continue
 			}
 
 		} else {

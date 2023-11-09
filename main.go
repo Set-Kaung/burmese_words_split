@@ -40,7 +40,7 @@ func main() {
 		log.Fatalln(err)
 	}
 	m, max := Splitter(strings.ReplaceAll(string(data), " ", ""))
-	i := make([]string, max+1, max+1)
+	i := make([]string, max, max)
 	for k, v := range m {
 		for _, j := range v {
 			i[j] = k
